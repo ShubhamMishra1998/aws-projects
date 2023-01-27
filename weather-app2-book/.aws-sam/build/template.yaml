@@ -1,0 +1,13 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 309
+      MemorySize: 512
+      Handler: com.shubham.weather.bulkevent.BulkEventLambda::handler
+      CodeUri: Function
+      Runtime: java8
+      Architectures:
+      - x86_64
+    Metadata:
+      SamResourceId: Function

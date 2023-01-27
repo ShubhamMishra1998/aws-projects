@@ -1,0 +1,11 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 309
+      MemorySize: 512
+      Handler: com.shubham.weather.bulkevent.BulkEventLambda::handler
+      CodeUri: C:\Users\Shubham_Mishra1\Documents\MyProjects\aws-projects\weather-app2-book
+      Runtime: java8
+      Architectures:
+        - x86_64
